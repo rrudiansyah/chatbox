@@ -1,0 +1,5 @@
+username,password,role
+admin,$2b$12$FYtJPdd4DhS2XrJQRscnZuZtYfJkIRVdvB623IkrIC9Mo3PbG6Bee,admin
+rudi,b'$2b$12$gO/wToxaJBvTzNqNBujcmeExyphTYKnlNBq1ZLrgtj7aLJY3A3Z3e',user
+andi,b'$2b$12$p3WDrRxgAN.jp0/RZhGof.DS5r75xHEP6e0gv8QSdZG3FbinEd.ye',user
+user1,b'$2b$12$6gBU6yRw.ECSkLQ1zEWZwuoZlNqW.A.KnH3mLNRU.IBKREUu5Q92q',user
