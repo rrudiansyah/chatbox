@@ -3,5 +3,4 @@ pandas
 scikit-learn
 streamlit
 bcrypt
-st_aggrid
-pip
+streamlit-aggrid
