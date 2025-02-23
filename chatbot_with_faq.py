@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-from st_aggrid import AgGrid, GridOptionsBuilder, ColumnsAutoSizeMode
+from st_aggrid import AgGrid, GridOptionsBuilder, ColumnsAutoSizeMode, DataReturnMode, GridUpdateMode
 import os
 import bcrypt
 
@@ -150,6 +150,12 @@ if "username" not in st.session_state:
 if "role" not in st.session_state:
     st.session_state.role = None
 
+def logout():
+    st.session_state.logged_in = False
+    st.session_state.username = None
+    st.session_state.role = None
+    st.sidebar.success("Anda telah berhasil logout.")
+
 def admin_login():
     st.sidebar.title("Login Admin")
     username = st.sidebar.text_input("Username")
@@ -177,12 +183,13 @@ if "new_answer" not in st.session_state:
     st.session_state.new_answer = ""
 
 def main():
-    st.title("Chatbot FAQ dengan Bidang Kinerja")
+    st.title("Chatbot FAQ dengan Rahmad Rudiansyah Siregar")
     st.write("Tanyakan sesuatu, dan saya akan mencoba menjawab!")
     # Tampilkan form untuk memasukkan pertanyaan
     faq_df = load_faq()
     user_input = st.text_input("Anda:")
-    if user_input.strip():
+    tombol_tanya = st.button("Tanya")
+    if user_input.strip() or tombol_tanya:
         response = chatbot_response(user_input,faq_df)
         if response:
             st.write(f"🤖 Bot : {response}")
@@ -206,55 +213,63 @@ def main():
     if st.session_state.logged_in and st.session_state.role == "admin":
         with st.sidebar.expander("Manajemen FAQ"):
             st.write("Tambahkan pertanyaan dan jawaban ke FAQ:")
-            new_question = st.text_area("Pertanyaan Baru", st.session_state.new_question, key="input_new_question")
+            new_question = st.text_area("Pertanyaan Baru", key="input_new_question")
             new_answer = st.text_area("Jawaban Baru", st.session_state.new_answer, key="input_new_answer")
             if st.button("Tambahkan ke FAQ",key="tambah_faq_button"):
                 if new_question.strip() and new_answer.strip():
                     faq_df = load_faq()
-                    new_entry = pd.DataFrame({"question": [new_question], "answer": [new_answer]})
-                    faq_df = pd.concat([faq_df, new_entry], ignore_index=True)
-                    save_faq(faq_df)
-                    st.success("Pertanyaan dan jawaban berhasil ditambahkan ke FAQ!")
-
-                    # Bersihkan input fields
-                    new_question = ""
+                    if new_question not in faq_df["question"].values:
+                        new_entry = pd.DataFrame({"question": [new_question], "answer": [new_answer]})
+                        faq_df = pd.concat([faq_df, new_entry], ignore_index=True)
+                        save_faq(faq_df)
+                        st.success("Pertanyaan dan jawaban berhasil ditambahkan ke FAQ!")
+                        # Bersihkan input fields
+                        new_question = ""
+                    else:
+                        st.error("Pertanyaan ini sudah pernah diajukan sebelumnya")
                 else:
                     st.error("Pertanyaan dan jawaban tidak boleh kosong.")
         
         with st.sidebar.expander("FAQ Log"):
-            # if st.button("Tampilkan FAQ Log",key="tampil_faq_log_button"):
-            #     logs = load_faq()
-            #     st.dataframe(logs)
-            if not faq_df.empty:
-                st.write("FAQ Log:")
+            if st.button("Tampilkan FAQ Log",key="tampil_faq_log_button"):
+                if not faq_df.empty:
+                    logs = load_faq()
+                    st.dataframe(logs)
+                else:
+                    st.write("Tidak ada data FAQ.")
+                    
+            # if not faq_df.empty:
+            #     st.write("Daftar FAQ Log:")
                 
-                # Tambahkan kolom "Hapus" ke DataFrame
-                faq_df["Hapus"] = "❌"
+            #     # Tambahkan kolom "Hapus" ke DataFrame
+            #     # faq_df["Hapus"] = "❌"
                 
-                # Konfigurasi AgGrid
-                gb = GridOptionsBuilder.from_dataframe(faq_df)
-                gb.configure_column("Hapus", header_name="Hapus", width=50, cellRenderer="DeleteButton")
-                gb.configure_selection("single", use_checkbox=False)
-                grid_options = gb.build()
+            #     # Konfigurasi AgGrid
+            #     gb = GridOptionsBuilder.from_dataframe(faq_df)
+            #     gb.configure_column("Hapus", header_name="Hapus", width=50, cellRenderer="DeleteButton")
+            #     gb.configure_selection("single", use_checkbox=False)
+            #     gb.configure_grid_options(enableRangeSelection=True, rowSelection="single")
+            #     grid_options = gb.build()
                 
-                # Tampilkan AgGrid
-                grid_response = AgGrid(
-                    faq_df,
-                    gridOptions=grid_options,
-                    columns_auto_size_mode=ColumnsAutoSizeMode.FIT_CONTENTS,
-                    theme="streamlit"
-                )
+            #     # Tampilkan AgGrid
+            #     grid_response = AgGrid(
+            #         faq_df,
+            #         gridOptions=grid_options,
+            #         update_mode=GridUpdateMode.SELECTION_CHANGED,
+            #         data_return_mode=DataReturnMode.FILTERED_AND_SORTED,
+            #         columns_auto_size_mode=ColumnsAutoSizeMode.FIT_CONTENTS,
+            #         theme="streamlit"
+            #     )
                 
-                # Tangani aksi hapus
-                if grid_response["selected_rows"]:
-                    selected_row = grid_response["selected_rows"][0]
-                    if selected_row["Hapus"] == "❌":
-                        faq_df = faq_df[faq_df["question"] != selected_row["question"]]
-                        save_faq(faq_df)
-                        st.success(f"Pertanyaan '{selected_row['question']}' berhasil dihapus!")
-                        st.experimental_rerun()  # Refresh tampilan
-            else:
-                st.write("Tidak ada data FAQ.")
+            #     # Tangani aksi hapus
+            #     # if grid_response["selected_rows"]:
+            #     #     selected_row = grid_response["selected_rows"][0]
+            #     #     if selected_row["Hapus"] == "❌":
+            #     #         faq_df = faq_df[faq_df["question"] != selected_row["question"]]
+            #     #         save_faq(faq_df)
+            #     #         st.success(f"Pertanyaan '{selected_row['question']}' berhasil dihapus!")
+            #     #         st.experimental_rerun()  # Refresh tampilan
+            
 
         with st.sidebar.expander("Pertanyaan dari User"):
             user_questions_df = load_user_questions()
@@ -282,9 +297,13 @@ def main():
                 logs = load_logs()
                 st.dataframe(logs)
 
-    # Fitur login admin di sidebar
+        # Fitur login admin di sidebar
     if not st.session_state.logged_in:
         admin_login()
+    else:
+        tombol_logout = st.sidebar.button("Logout")
+        if tombol_logout:
+            logout()
 
 if __name__ == "__main__":
     main()
