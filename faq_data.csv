@@ -1,50 +1,148 @@
-question,answer
-hello,Hi! Apa yang dapat saya bantu?
-apa kabar anda?,saya dalam keadaan baik
-siapa namamu?,nama saya rahmad
-bye,Goodbye! Have a great day!
-Bagaimana jika tanggal yang tampil di Profil atau SKP tidak sesuai ,Cek kembali pengaturan jam dan zona waktu di laptop / komputer masing-masing.
-Bagaimana jika tidak muncul kolom Target pada Rencana SKP Tahunan,"Berarti SKP yang dibuat model Kualitatif, jika ingin muncul kolom Target, silahkan edit Rencana SKP menjadi model Kuantitatif"
-syarat mutasi,melampirkan surat ijin dari opd asal
-Mengapa data Jabatan / Unit Kerja tidak berubah di Rencana SKP walaupun di Profil sudah berubah dan klik Muat Ulang,Perubahan Jabatan / Unit Kerja / Jenis Pegawai / Model SKP hanya bisa dilakukan saat posisi SKP Draft. Silahkan menurunkan status SKP ke Draft dari akun Pejabat Penilai Kinerja.
-Mengapa di cetakan Dokumen Evaluasi Kinerja nama Atasan Pejabat Penilai salah atau harusnya sudah ke Atasan Pejabat Penilai Kinerja yang baru,"Dari Akun Pejabat Penilai Kinerja silahkan klik Tombol Penilaian, kemudian Pilih Periode Penilaian dimana data Atasan masih salah, dan klik tombol Pengisian Bukti Dukung dan Lihat Hasil, lalu Klik Muat Ulang supaya terupdate menjadi atasan yang terbaru."
-"Mengapa Periode Penilaian Final yang sudah dinilai hilang dari SKP Pegawai ? Padahal di akun pegawai lainnya, penilaian final masih ada.","Jika hilangnya periode Final hanya terjadi di akun beberapa pegawai, silahkan mengecek kembali Periode Rencana SKP masing-masing pegawai, Periode Final hanya akan muncul di SKP dengan Periode Akhir 31 Desember. Kemungkinan Periode Akhir SKP pegawai tersebut dibuat tanggal lain, misalnya 30 Desember. Silahkan diedit Periode Akhir SKP tersebut menjadi 31 Desember, otomatis Periode Final akan tampil lagi di halaman Penilaian."
-"Jika pegawai memiliki beberapa Periode SKP dalam 1 tahun karena mutasi, apakah periode Final harus dibuat untuk setiap periode SKP atau hanya di periode SKP terakhir",Periode Final hanya perlu ditambahkan untuk periode SKP di jabatan definitif terakhir.
-Apakah nilai SKP periodik (bulanan / triwulanan) bisa tersinkron masuk ke SIASN?,"Untuk sekarang nilai SKP periodik tidak dikirimkan ke e-Kinerja, tapi sedang dikembangkan untuk mengirimkan Riwayat Kinerja Periodik tapi hanya untuk periodik terakhir yang di klaim Angka Kredit di e-Kinerja."
-"Ketika Periode SKP terakhir misalnya 1 Juni 2024 - 31 Desember 2024, kenapa ketika dicetak Dokumen Evaluasi Kinerja tanggalnya dari 1 Januari - 31 Desember 2024","Untuk Periode Final, ketika dicetak otomatis tanggal akan start dari 1 Januari - 31 Desember, kecuali TMT CPNS / PPPK ybs setelah tanggal 1 Januari, maka tanggal awal periode adalah TMT CPNS / PPPK."
-Mengapa nilai Capaian Organisasi tidak tampil di menu Penilaian Pegawai,"Sampaikan Lakip, Penilaian RB setelah itu maka pegawai tidak bisa merealisasikan dan mendapat penilaian, klaim Angka Kredit dan kirim Predikat Kinerja ke SIASN."
-Saya sudah pernah klaim Angka Kredit Periodik di tahun berjalan. Kenapa ketika akan klaim lagi Periode Final tidak muncul untuk bisa dipilih,"Jika sudah pernah melakukan klaim angka kredit periodik di tahun berjalan, maka klaim kedua (sisanya) dilakukan di periodik terakhir (Triwulan IV / Desember). Jika tidak muncul periodik terakhir tersebut berarti ada 3 kemungkinan : 1. Periode Akhir SKP tidak dibuat sampai 31 Desember. 2. Belum mendapatkan penilaian kinerja periodik di Desember."
-Bagaimana cara menghapus Riwayat Angka Kredit yang salah di e-Kinerja,"Jika sumber Angka Kredit dari SIASN, maka penghapusan dilakukan dari SIASN Peremajaan Angka Kredit, kemudian di e-Kinerja klik tombol Sinkro AK SIASN supaya Riwayat Angka Kredit di e-Kinerja ikut terhapus.Jika sumber Angka Kredit dari e-Kinerja, maka bisa diturunkan dulu status Angka Kredit ke Draft dari akun Pejabat Penilai Kinerja. klik tombol Hapus di akun masing-masing Pegawai."
-Mengapa saat klik tombol Sinkron AK SIASN ada pesan Angka Kredit Integrasi sudah ada,"Pesan tersebut muncul jika Angka Kredit sudah duplikat ditambahkan, ditambahkan di e-Kinerja langsung, dan ditambahkan juga dari SIASN. Silahkan menghapus salah satu, jika menghapus yang sumber dari e-Kinerja, maka buat Angka Kredit menjadi Draft dulu dari akun Pejabat Penilai Kinerja atau admin e-Kinerja menu Angka Kredit kemudian dihapus dari akun masing-masing pegawai. Jika yang akan dihapus adalah sumber dari SIASN, silahkan menghapus dari SIASN Instansi di Layanan Peremajaan Angka Kredit. Jika sudah tidak duplikat, silahkan coba lagi klik tombol Sinkro AK SIASN."
-periode skp januari 2025,periode skp januari 2025 adalah 18 februari 2025
-Mengapa saat klik tombol Sikron AK SIASN ada pesan Angka Kredit Integrasi BELUM ada,"Pesan tersebut muncul ketika akan melakukan sinkron AK konversi dari e-Kinerja ke SIASN dan di e-Kinerja tidak ada AK integrasi ditambahkan, begitu juga di SIASN belum ada AK Integrasi, sehingga SIASN menolak sinkronisasi tersebut. Jika TMT JF ybs tahun 2022 ke bawah dan memang tidak ada PAK Integrasi, silahkan menginput Riwayat AK Integrasi 0 di SIASN dengan melampirkan SK Jabatan Terakhir. Jika ybs mempunyai PAK Integrasi, silahkan menambahkan terlebih dahulu AK Integrasi tersebut lewat e-Kinerja atau SIASN Peremajaan Riwayat Angka Kredit."
-Mengapa di Angka Kredit e-Kinerja ada pesan Belum TTE / Unggah TTD Basah PAK,"Setelah Pejabat Penilai Kinerja melakukan persetujuan PAK, ybs bisa memilih dulu apakah ingin membubuhkan tanda tangan dalam bentuk TTE atau TTD Basah, kemudian klik tombol Buat Draft PAK. Jika yang dipilih adalah TTE, maka Pejabat Penilai Kinerja bisa langsung melakukan TTE di aplikasi e-Kinerja. Jika yang dipilih adalah TTD Basah, maka pegawai bisa melakukan unduh Draft PAK di akun e-Kinerja masing-masing (klik tombol Aksi > Unduh Draft PAK) kemudian file tersebut dicetak, ditandatangani kemudian diunggah kembali di menu Angka Kredit e-Kinerja (klik tombol Aksi > Unggah Draft PAK). "
-Mengapa di Angka Kredit e-Kinerja ada pesan File TTD Basah Belum Diunggah,File PAK yang sudah ditandatangani dan di scan bisa diunggah kembali dengan klik Tombol Aksi > Unggah PAK TTD Basah. Aksi ini bisa dilakukan di akun bawahan maupun atasan.
-Mengapa Jumlah Angka Kredit dengan sumber SIASN tidak terlihat terakumulasi ? (Tidak ada keterangan Baru di bawah Perolehan,"Angka Kredit dari SIASN memang ketika di sinkronkan dengan e-Kinerja tidak langsung dihitungkan akumulasinya, tapi ketika pegawai mengklaim Angka Kredit konversi selanjutnya via e-Kinerja, angka kredit dari SIASN itu bisa terakumulasi."
-Mengapa Jumlah Angka Kredit yang di klaim di e-Kinerja tidak terakumulasi,"Ada beberapa kemungkinan Angka Kredit sebelumnya tidak terakumulasi :
+tag,question,answer
+hello,Hi! Apa yang dapat saya bantu?,
+apa kabar anda?,saya dalam keadaan baik,
+siapa namamu?,nama saya rahmad,
+bye,Goodbye! Have a great day!,
+mengapa tidak dapat login ke aplikasi android ekinsu,"beberapa penyebab anda tidak dapat login ke aplikasi android ekinsu :
+1. Periksa jaringan internet anda
+2. Pastikan username dan password anda telah benar",
+Lupa password aplikasi android ekinsu,Hubungi admin PIC OPD di Bapeg untuk mengembalikan ke password standard,
+bye,Terima kasih telah menggunakan chatbot ini!,
+Satyalancana Karya Satya SLKS,dokumen persyaratan satyalancana karya satya slks,"Dokumen persyaratan Satyalancana Karya Satya :
+* Daftar Riwayat Hidup
+* Softcopy SK CPNS
+* Softcopy SK PNS (khusus pengangkatan Sekdes)
+* Softcopy SK Pangkat Terakhir
+* Softcopy SK Jabatan Terakhir
+* Softcopy Surat Tugas (khusus guru)
+* Softcopy Piagam/Petikan SLKS yang sudah diperoleh"
+Aplikasi Ekinerja BKN,Bagaimana jika tanggal yang tampil di Profil atau SKP ekinerja bkn tidak sesuai,Cek kembali pengaturan jam dan zona waktu di laptop / komputer masing-masing
+Aplikasi Ekinerja BKN,Bagaimana jika tidak muncul kolom Target pada Rencana SKP Tahunan pada ekinerja bkn,"Berarti SKP yang dibuat model Kualitatif, jika ingin muncul kolom Target, silahkan edit Rencana SKP menjadi model Kuantitatif"
+Aplikasi Ekinerja BKN,Mengapa data Jabatan / Unit Kerja pada ekinerja bkn tidak berubah di Rencana SKP walaupun di Profil sudah berubah dan klik Muat Ulang,Perubahan Jabatan / Unit Kerja / Jenis Pegawai / Model SKP hanya bisa dilakukan saat posisi SKP Draft. Silahkan menurunkan status SKP ke Draft dari akun Pejabat Penilai Kinerja
+Aplikasi Ekinerja BKN,Mengapa di cetakan Dokumen Evaluasi Kinerja pada ekinerja BKN nama Atasan Pejabat Penilai salah atau harusnya sudah ke Atasan Pejabat Penilai Kinerja yang baru,"Dari Akun Pejabat Penilai Kinerja silahkan klik Tombol Penilaian, kemudian Pilih Periode Penilaian dimana data Atasan masih salah, dan klik tombol Pengisian Bukti Dukung dan Lihat Hasil, lalu Klik Muat Ulang supaya terupdate menjadi atasan yang terbaru"
+Aplikasi Ekinerja BKN,"Mengapa Periode Penilaian Final yang sudah dinilai hilang dari SKP Pegawai pada ekinerja bkn Padahal di akun pegawai lainnya, penilaian final masih ada","Jika hilangnya periode Final hanya terjadi di akun beberapa pegawai, silahkan mengecek kembali Periode Rencana SKP masing-masing pegawai, Periode Final hanya akan muncul di SKP dengan Periode Akhir 31 Desember. Kemungkinan Periode Akhir SKP pegawai tersebut dibuat tanggal lain, misalnya 30 Desember. Silahkan diedit Periode Akhir SKP tersebut menjadi 31 Desember, otomatis Periode Final akan tampil lagi di halaman Penilaian"
+Aplikasi Ekinerja BKN,Jika pegawai memiliki beberapa Periode SKP dalam 1 tahun karena mutasi apakah periode Final harus dibuat untuk setiap periode SKP atau hanya di periode SKP terakhir pada ekinerja bkn,Periode Final hanya perlu ditambahkan untuk periode SKP di jabatan definitif terakhir
+Aplikasi Ekinerja BKN,Apakah nilai SKP periodik (bulanan / triwulanan) pada ekinerja bkn bisa tersinkron masuk ke SIASN,"Untuk sat ini nilai SKP periodik tidak dikirimkan ke e-Kinerja, tapi sedang dikembangkan untuk mengirimkan Riwayat Kinerja Periodik tapi hanya untuk periodik terakhir yang di klaim Angka Kredit di e-Kinerja"
+Aplikasi Ekinerja BKN,"pada ekinerja bkn Ketika Periode SKP terakhir misalnya 1 Juni 2024 - 31 Desember 2024, kenapa ketika dicetak Dokumen Evaluasi Kinerja tanggalnya dari 1 Januari - 31 Desember 2024","Untuk Periode Final, ketika dicetak otomatis tanggal akan start dari 1 Januari - 31 Desember, kecuali TMT CPNS / PPPK ybs setelah tanggal 1 Januari, maka tanggal awal periode adalah TMT CPNS / PPPK"
+Aplikasi Ekinerja BKN,Saya sudah pernah klaim Angka Kredit Periodik di tahun berjalan pada ekinerja bkn mengapa ketika akan klaim lagi Periode Final tidak muncul untuk bisa dipilih,"Jika sudah pernah melakukan klaim angka kredit periodik di tahun berjalan, maka klaim kedua (sisanya) dilakukan di periodik terakhir (Triwulan IV / Desember). Jika tidak muncul periodik terakhir tersebut berarti ada 3 kemungkinan : 
+1. Periode Akhir SKP tidak dibuat sampai 31 Desember. 
+2. Belum mendapatkan penilaian kinerja periodik di Desember"
+Aplikasi Ekinerja BKN,Bagaimana cara menghapus Riwayat Angka Kredit yang salah di ekinerja bkn,"Jika sumber Angka Kredit dari SIASN, maka penghapusan dilakukan dari SIASN Peremajaan Angka Kredit, kemudian di e-Kinerja klik tombol Sinkro AK SIASN supaya Riwayat Angka Kredit di e-Kinerja ikut terhapus.Jika sumber Angka Kredit dari e-Kinerja, maka bisa diturunkan dulu status Angka Kredit ke Draft dari akun Pejabat Penilai Kinerja. klik tombol Hapus di akun masing-masing Pegawai"
+Aplikasi Ekinerja BKN,Mengapa saat klik tombol Sinkron AK SIASN ada pesan Angka Kredit Integrasi sudah ada,"Pesan tersebut muncul jika Angka Kredit sudah duplikat ditambahkan, ditambahkan di e-Kinerja langsung, dan ditambahkan juga dari SIASN. Silahkan menghapus salah satu, jika menghapus yang sumber dari e-Kinerja, maka buat Angka Kredit menjadi Draft dulu dari akun Pejabat Penilai Kinerja atau admin e-Kinerja menu Angka Kredit kemudian dihapus dari akun masing-masing pegawai. Jika yang akan dihapus adalah sumber dari SIASN, silahkan menghapus dari SIASN Instansi di Layanan Peremajaan Angka Kredit. Jika sudah tidak duplikat, silahkan coba lagi klik tombol Sinkro AK SIASN"
+Aplikasi Ekinerja BKN,Mengapa saat klik tombol Sikron AK SIASN pada ekinerja bkn ada pesan Angka Kredit Integrasi BELUM ada,"Pesan tersebut muncul ketika akan melakukan sinkron AK konversi dari e-Kinerja ke SIASN dan di e-Kinerja tidak ada AK integrasi ditambahkan, begitu juga di SIASN belum ada AK Integrasi, sehingga SIASN menolak sinkronisasi tersebut. Jika TMT JF ybs tahun 2022 ke bawah dan memang tidak ada PAK Integrasi, silahkan menginput Riwayat AK Integrasi 0 di SIASN dengan melampirkan SK Jabatan Terakhir. Jika ybs mempunyai PAK Integrasi, silahkan menambahkan terlebih dahulu AK Integrasi tersebut lewat e-Kinerja atau SIASN Peremajaan Riwayat Angka Kredit"
+Aplikasi Ekinerja BKN,Mengapa di Angka Kredit e-Kinerja ada pesan Belum TTE / Unggah TTD Basah PAK,"Setelah Pejabat Penilai Kinerja melakukan persetujuan PAK, ybs bisa memilih dulu apakah ingin membubuhkan tanda tangan dalam bentuk TTE atau TTD Basah, kemudian klik tombol Buat Draft PAK. Jika yang dipilih adalah TTE, maka Pejabat Penilai Kinerja bisa langsung melakukan TTE di aplikasi e-Kinerja. Jika yang dipilih adalah TTD Basah, maka pegawai bisa melakukan unduh Draft PAK di akun e-Kinerja masing-masing (klik tombol Aksi > Unduh Draft PAK) kemudian file tersebut dicetak, ditandatangani kemudian diunggah kembali di menu Angka Kredit e-Kinerja (klik tombol Aksi > Unggah Draft PAK)"
+Aplikasi Ekinerja BKN,Mengapa di Angka Kredit eKinerja bkn ada pesan File TTD Basah Belum Diunggah,File PAK yang sudah ditandatangani dan di scan bisa diunggah kembali dengan klik Tombol Aksi > Unggah PAK TTD Basah. Aksi ini bisa dilakukan di akun bawahan maupun atasan
+Aplikasi Ekinerja BKN,Mengapa pada ekinerja bkn Jumlah Angka Kredit dengan sumber SIASN tidak terlihat terakumulasi ? (Tidak ada keterangan Baru di bawah Perolehan,"Angka Kredit dari SIASN memang ketika di sinkronkan dengan e-Kinerja tidak langsung dihitungkan akumulasinya, tapi ketika pegawai mengklaim Angka Kredit konversi selanjutnya via e-Kinerja, angka kredit dari SIASN itu bisa terakumulasi"
+Aplikasi Ekinerja BKN,Mengapa Jumlah Angka Kredit yang di klaim di eKinerja bkn tidak terakumulasi,"Ada beberapa kemungkinan Angka Kredit sebelumnya tidak terakumulasi :
 1. Angka Kredit sebelumnya bukan berjenis Integrasi atau Konversi
 2. Angka Kredit sebelumnya berada pada jenjang jabatan yang berbeda sehingga tidak dihitungkan, karena perhitungan angka kredit konversi di e-Kinerja hanya pada jenjang yang sama.
-3. Jika setelah dicek tidak ada masalah pada nomor 1 dan 2, silahkan buat Angka Kredit ke Draft (dari akun Pejabat Penilai Kinerja lalu dari akun Pegawai klik Aksi > Edit > Muat Ulang Data Perhitungan, lalu klik Aksi > Generate Preview dan Aksi > Unduh Preview, dan dicek kembali apakah perhitungan angka kredit sudah benar."
-Bagaimana jika Angka Kredit yang tampil Periode Awal atau Periode Akhir tertulis Invalid Date,"Jika sumber Angka Kredit dari SIASN, klik tombol Sinkro AK SIASN."
-Kenapa di Menu Angka Kredit tidak muncul tombol Tambah PAK,"Data Jabatan di e-Kinerja belum sebagai JFT, silahkan cek kembali di SIASN, jika di SIASN belum sebagai JFT, silahkan diremajakan dulu di SIASN. Jika di SIASN sudah sebagai JFT, silahkan klik tombol Sinkro Jabatan SIASN di e-Kinerja menu Angka Kredit."
-Bagaimana jika muncul pesan error  Gagal melakukan sinkro PMM dikarenakan Data PNS ID belum padan antara SIASN dengan Verval PTK.,"Silahkan melakukan pemadanan data Guru di aplikasi Verval PTK http://vervalptk.data.kemdikbud.go.id.kemudian menunggu jadwal sinkronisasi pemadanan ke PMM, dan setelah itu bisa dilakukan sinkronisasi PMM dari e-Kinerja. Untuk status pemadanan dan tanggal sinkron pemadanan dari Verval PTK ke PMM bisa dilihat di menu ini di aplikasi Verval PTK "
-Bagaimana jika muncul pesan error : “Unor PMM Belum Padan” saat melakukan Sinkronisasi Rotasi / Sinkronisasi Penilaian Akhir PMM,"Silahkan melakukan pemadanan data Sekolah di aplikasi Verval SP https://vervalsp.data.kemdikbud.go.id/pemadanan-unor
-kemudian menunggu jadwal sinkronisasi pemadanan ke PMM (H+2 setelah dilakukan pemadanan di aplikasi Verval SP, dan setelah itu bisa dilakukan sinkronisasi PMM dari e-Kinerja."
-Apakah batas penilaian di e-Kinerja berpengaruh terhadap pengaliran nilai guru dari PMM ke e-Kinerja,"Tidak. Fitur sinkronisasi Penilaian Periodik dan Penilaian Final dari PMM ke e-Kinerja tidak dibatasi batas penilaian di pengaturan Manajemen Periode e-Kinerja, karena di e-Kinerja tinggal disinkronisasi saja, dianggap penilaian sudah dilakukan di PMM."
-Bagaimana jika muncul pesan error  Tidak terdapat penilaian baru dari PMM” saat klik tombol Sinkron Penilaian Periodik PMM,"Artinya semua penilaian periodik sudah masuk semua dari PMM. Jika terdapat periodik yang belum ada nilainya di e-Kinerja, berarti nilai periode tersebut tidak ada di PMM. Kemungkinan karena SKP di PMM baru disetujui setelah periodik tersebut, sehingga nilai di periodik yang sudah lewat tidak ada. Kalau penilaian yang kosong adalah penilaian di tengah periodik, misalnya Periodik Januari - Juni ada, kemudian Juli kosong dan Agustus ada lagi periodiknya, silahkan menghubungi Pusat Bantuan PMM."
-Bagaimana jika muncul pesan error  Gagal melakukan sinkro PMM dikarenakan Predikat Kinerja Akhir belum ditetapkan,"Pastikan nilai pada menu Hasil Penilaian Kinerja Guru / Kepala Sekolah sudah ada pada tab Tahunan (2024) (tidak ada icon gembok). Jika nilai sudah ada di tab Tahunan (2024) tapi masih muncul pesan error seperti diatas saat melakukan sinkro PMM, silahkan menghubungi Pusat Bantuan PMM. Lebih lanjut terkait Predikat Kinerja Guru dan Kepala Sekolah bisa dilihat pada tautan:
+3. Jika setelah dicek tidak ada masalah pada nomor 1 dan 2, silahkan buat Angka Kredit ke Draft (dari akun Pejabat Penilai Kinerja lalu dari akun Pegawai klik Aksi > Edit > Muat Ulang Data Perhitungan, lalu klik Aksi > Generate Preview dan Aksi > Unduh Preview, dan dicek kembali apakah perhitungan angka kredit sudah benar"
+Aplikasi Ekinerja BKN,Bagaimana jika Angka Kredit pada ekinerja bkn yang tampil Periode Awal atau Periode Akhir tertulis Invalid Date,"Jika sumber Angka Kredit dari SIASN, klik tombol Sinkro AK SIASN"
+Aplikasi Ekinerja BKN,Kenapa di Menu Angka Kredit pada ekinerja bkn tidak muncul tombol Tambah PAK,"Data Jabatan di e-Kinerja belum sebagai JFT, silahkan cek kembali di SIASN, jika di SIASN belum sebagai JFT, silahkan diremajakan dulu di SIASN. Jika di SIASN sudah sebagai JFT, silahkan klik tombol Sinkro Jabatan SIASN di e-Kinerja menu Angka Kredit"
+Aplikasi Ekinerja BKN,Bagaimana jika muncul pesan error  Gagal melakukan sinkro PMM dikarenakan Data PNS ID belum padan antara SIASN dengan Verval PTK,"Silahkan melakukan pemadanan data Guru di aplikasi Verval PTK http://vervalptk.data.kemdikbud.go.id.kemudian menunggu jadwal sinkronisasi pemadanan ke PMM, dan setelah itu bisa dilakukan sinkronisasi PMM dari e-Kinerja. Untuk status pemadanan dan tanggal sinkron pemadanan dari Verval PTK ke PMM bisa dilihat di menu ini di aplikasi Verval PTK"
+Aplikasi Ekinerja BKN,Bagaimana jika muncul pesan error : “Unor PMM Belum Padan” saat melakukan Sinkronisasi Rotasi / Sinkronisasi Penilaian Akhir PMM,"Silahkan melakukan pemadanan data Sekolah di aplikasi Verval SP https://vervalsp.data.kemdikbud.go.id/pemadanan-unor
+kemudian menunggu jadwal sinkronisasi pemadanan ke PMM (H+2 setelah dilakukan pemadanan di aplikasi Verval SP, dan setelah itu bisa dilakukan sinkronisasi PMM dari e-Kinerja"
+Aplikasi Ekinerja BKN,Bagaimana jika muncul pesan error  Tidak terdapat penilaian baru dari PMM saat klik tombol Sinkron Penilaian Periodik PMM,"Artinya semua penilaian periodik sudah masuk semua dari PMM. Jika terdapat periodik yang belum ada nilainya di e-Kinerja, berarti nilai periode tersebut tidak ada di PMM. Kemungkinan karena SKP di PMM baru disetujui setelah periodik tersebut, sehingga nilai di periodik yang sudah lewat tidak ada. Kalau penilaian yang kosong adalah penilaian di tengah periodik, misalnya Periodik Januari - Juni ada, kemudian Juli kosong dan Agustus ada lagi periodiknya, silahkan menghubungi Pusat Bantuan PMM"
+Aplikasi Ekinerja BKN,Bagaimana jika muncul pesan error  Gagal melakukan sinkro PMM dikarenakan Predikat Kinerja Akhir belum ditetapkan,"Pastikan nilai pada menu Hasil Penilaian Kinerja Guru / Kepala Sekolah sudah ada pada tab Tahunan (2024) (tidak ada icon gembok). Jika nilai sudah ada di tab Tahunan (2024) tapi masih muncul pesan error seperti diatas saat melakukan sinkro PMM, silahkan menghubungi Pusat Bantuan PMM. Lebih lanjut terkait Predikat Kinerja Guru dan Kepala Sekolah bisa dilihat pada tautan:
 1. Guru https://pusatinformasi.ult.kemdikbud.go.id/hc/id/articles/40451563446425-Tentang-Dokumen-Hasil-Penilaian-Kinerja-Tahunan-Guru
-2. Kepala Sekolah https://pusatinformasi.ult.kemdikbud.go.id/hc/id/articles/40468935532441-Tentang-Dokumen-Hasil-Penilaian-Kinerja-Kepala-Sekolah"
-Mengapa penilaian Semester 1 / Semester 2 di PMM berbeda dengan penilaian periodik Bulanan / Triwulanan di e-Kinerja,"Nilai yang didapat di PMM adalah Semesteran, sementara di e-Kinerja menggunakan Periodik Triwulanan atau Bulanan sesuai pengaturan masing-masing Instansi. Nilai Semesteran tersebut akan dipecah menjadi Triwulanan / Bulanan sesuai formulasi dari PMM, dan akan dikirim ke e-Kinerja. Jika ada keberatan terkait penilaian bisa menghubungi Pusat Bantuan PMM."
-"Mengapa muncul pesan error Tidak ada RHK yang terdeteksi di PMM, padahal saya sudah menyelesaikan Rencana SKP di PMM sampai pada Persetujuan",Pastikan Rencana SKP sudah sampai tahap persetujuan atasan di PMM. Jika sudah persetujuan tapi masih muncul pesan error seperti itu bisa menghubungi Pusat Bantuan PMM.
-Mengapa muncul pesan error  Data kepegawaian di PMM tidak terdaftar sebagai ASN,"Silahkan mengecek kembali data guru di :
+2. Kepala Sekolah https://pusatinformasi.ult.kemdikbud.go.id/hc/id/articles/40468935532441-Tentang-Dokumen-Hasil-Penilaian-Kinerja-Kepala-Sekolah"""
+Aplikasi Ekinerja BKN,Mengapa penilaian Semester 1 / Semester 2 di PMM berbeda dengan penilaian periodik Bulanan / Triwulanan di ekinerja bkn,"Nilai yang didapat di PMM adalah Semesteran, sementara di e-Kinerja menggunakan Periodik Triwulanan atau Bulanan sesuai pengaturan masing-masing Instansi. Nilai Semesteran tersebut akan dipecah menjadi Triwulanan / Bulanan sesuai formulasi dari PMM, dan akan dikirim ke e-Kinerja. Jika ada keberatan terkait penilaian bisa menghubungi Pusat Bantuan PMM"
+Aplikasi Ekinerja BKN,"Mengapa muncul pesan error Tidak ada RHK yang terdeteksi di PMM, padahal saya sudah menyelesaikan Rencana SKP di PMM sampai pada Persetujuan",Pastikan Rencana SKP sudah sampai tahap persetujuan atasan di PMM. Jika sudah persetujuan tapi masih muncul pesan error seperti itu bisa menghubungi Pusat Bantuan PMM
+Aplikasi Ekinerja BKN,Mengapa muncul pesan error  Data kepegawaian di PMM tidak terdaftar sebagai ASN,"Silahkan mengecek kembali data guru di :
 1. Dapodik, apakah masih ada data yang belum tervalidasi atau kurang atau salah.
 2. Cek data di Verval PTK http://vervalptk.data.kemdikbud.go.id apakah sudah dipadankan semua untuk semua komponen data baik Dukcapil dan BKN, kemudian cek kembali apakah Tanggal Pemadanan > Last Update supaya memastikan pemadanan data terakhir sudah teralirkan pada jadwal sinkronisasi Verval PTK - PMM.
 3. Cek data di https://gtk.belajar.kemdikbud.go.id/akun/ptk menggunakan NIK guru untuk memastikan NIK tidak salah. Selain itu cek juga apakah status kepegawaian bukan “PNS Depag”. Jika bukan sebagai PNS Depag tapi status di situs itu tercatat PNS Depag, maka silahkan melakukan perubahan data melalui Operator Dapodik.
-4. Jika semua sudah dicek tapi masih terdapat error tersebut saat Sinkro SKP PMM, silahkan menghubungi Pusat Bantuan PMM."
-Mengapa saat klik sinkron SKP PMM muncul keterangan Berhasil Melakukan Sinkro tapi keterangan jumlah RHK Individu dan Indikator Masuk  0,Artinya semua RHK dari PMM sudah berhasil masuk ke e-Kinerja dan tidak ada (0) RHK / Indikator baru yang masuk ke e-Kinerja. Silahkan mengecek kembali apa RHK dan Indikator yang masuk ke e-Kinerja sudah lengkap sesuai dengan PMM.
-Saya bukan Pengguna PMM tapi saat login tertulis “Akun Anda Terdaftar Sebagai Pengguna Aplikasi PMM” dan tidak bisa melakukan tambah maupun edit SKP Tahun 2024 ke atas.,"Jika memang bukan pengguna PMM, admin e-Kinerja bisa menghapus nama ybs di menu User PMM."
-Bagaimana dengan SKP Staf TU di sekolah,Staf TU perlu menunggu Kepala Sekolah melakukan Sinkro SKP PMM. Setelah itu di RHK KS akan muncul RHK “Terkelolanya penugasan Guru dan tenaga kependidikan untuk mewujudkan penyelenggaraan pembelajaran yang berkualitas”. RHK itu bisa diintervensi oleh Staf TU. Untuk persetujuan SKP dan Penilaian tetap dilakukan oleh Kepala Sekolah lewat e-Kinerja.
-Mengapa di SKP sebagai PLT Kepala Sekolah tidak ada tombol Sinkron Penilaian,Yang bisa di sinkronkan penilaian hanya SKP definitif saja.
-Kenapa muncul pesan error Request failed with status code 419,Silahkan logout lalu login lagi.
-Kenapa saat login muncul pesan error Terjadi Kesalahan pada Aplikasi dikarenakan permasalahan sistem dan tidak bisa klik apa-apa di e-Kinerja.,Kemungkinan pegawai belum masuk e-Kinerja atau sudah terhapus.
+4. Jika semua sudah dicek tapi masih terdapat error tersebut saat Sinkro SKP PMM, silahkan menghubungi Pusat Bantuan PMM"
+Aplikasi Ekinerja BKN,Mengapa saat klik sinkron SKP PMM muncul keterangan Berhasil Melakukan Sinkro tapi keterangan jumlah RHK Individu dan Indikator Masuk  0,Artinya semua RHK dari PMM sudah berhasil masuk ke e-Kinerja dan tidak ada (0) RHK / Indikator baru yang masuk ke e-Kinerja. Silahkan mengecek kembali apa RHK dan Indikator yang masuk ke e-Kinerja sudah lengkap sesuai dengan PMM
+Aplikasi Ekinerja BKN,Bagaimana dengan SKP Staf tata usaha TU di sekolah,Staf TU perlu menunggu Kepala Sekolah melakukan Sinkro SKP PMM. Setelah itu di RHK KS akan muncul RHK “Terkelolanya penugasan Guru dan tenaga kependidikan untuk mewujudkan penyelenggaraan pembelajaran yang berkualitas”. RHK itu bisa diintervensi oleh Staf TU. Untuk persetujuan SKP dan Penilaian tetap dilakukan oleh Kepala Sekolah lewat e-Kinerja
+Aplikasi Ekinerja BKN,Mengapa di SKP sebagai PLT Kepala Sekolah tidak ada tombol Sinkron Penilaian,Yang bisa di sinkronkan penilaian hanya SKP definitif saja
+Aplikasi Ekinerja BKN,Kenapa muncul pesan error Request failed with status code 419,Silahkan logout lalu login lagi
+Aplikasi Ekinerja BKN,Kenapa saat login muncul pesan error Terjadi Kesalahan pada Aplikasi dikarenakan permasalahan sistem dan tidak bisa klik apa-apa di e-Kinerja,Kemungkinan pegawai belum masuk e-Kinerja atau sudah terhapus
+Cuti PNS,CUTI DI LUAR TANGGUNGAN NEGARA cltn,Cuti di Luar Tanggungan Negara adalah cuti yang diberikan kepada PNS karena alasan pribadi dan mendesak setelah memenuhi persyaratan
+Cuti PNS,masa kerja dalam pemberian persetujuan cuti di luar tanggungan negara cltn,PNS yang telah bekerja paling singkat 5 tahun secara terus-menerus karena alasan pribadi dan mendesak terhitung mulai dari CPNS
+Cuti PNS,berapa lama  cuti diluar tanggungan negara cltn dapat diberikan,Cuti di luar tanggungan negara dapat diberikan untuk paling lama 3 tahun
+Cuti PNS,Alasan pribadi mendesak dalam pemberian persetujuan cuti diluar tanggungan negara cltn,"Alasan pribadi dan mendesak :
+* Mengikuti atau mendampingi suami/ isteri tugas negara/tugas belajar di dalam/luar negeri
+(melampirkan surat penugasan atau surat perintah tugas dari pejabat yang berwenang)
+* Mendampingi suami/isteri bekerja di dalam/luar negeri
+(melampirkan surat keputusan atau surat penugasan/pengangkatan dalam jabatan)
+* Menjalani program untuk mendapatkan keturunan
+(melampirkan surat keterangan dokter spesialis)
+* Mendampingi anak yang berkebutuhan khusus
+(melampirkan surat keterangan dokter spesialis)
+Mendampingi suami/isteri/anak yang memerlukan perawatan khusus
+(melampirkan surat keterangan dokter spesialis)
+* Mendampingi, merawat orang tua/mertua yang sakit/uzur
+(melampirkan surat keterangan dokter)"
+Cuti PNS,Persyaratan Administrasi cuti diluar tanggungan negara cltn,"Persyaratan administrasi CLTN:
+* Surat Pengantar dari Instansi pengusul;
+* Salinan SK CPNS;
+* Salinan SK PNS;
+* Salinan SK Kenaikan Pangkat terakhir;
+* Permohonan secara tertulis PNS kepada PPK disertai dengan alasan yang dibuat sesuai dengan contoh Anak Lampiran I.b Peraturan BKN 24 Tahun 2017 tentang Tata Cara Pemberian Cuti PNS;
+* Dokumen pendukung alasan PNS yang bersangkutan mengajukan CLTN (seperti Tugas Belajar suami/istri, Surat Keterangan dokter dan sebagainya); dan
+Nota Persetujuan Kepala Badan Kepegawaian Negara yang dibuat rangkap 3 (tiga) sesuai dengan contoh Anak Lampiran I.d Peraturan BKN 24 Tahun 2017 tentang Tata Cara Pemberian Cuti PNS."
+Cuti PNS,perpanjangan cuti diluar tanggungan negara cltn,Perpanjangan Cuti di Luar Tanggungan Negara dapat diperpanjang paling lama 1(satu) tahun dan Permintaan/permohonan perpanjangan CLTN harus sudah diajukan paling lambat 3 bulan sebelum CLTN berakhir
+Cuti PNS,persyaratan administrasi perpanjangan cuti diluar tanggungan negara cltn,"Persyaratan Administrasi :
+* Surat Pengantar dari Instansi pengusul;
+* Salinan SK Pemberian CLTN;
+* Permohonan perpanjangan CLTN secara tertulis PNS kepada PPK, disertai dengan alasan-alasan yang penting untuk memperpanjangnya yang dibuat sesuai dengan contoh Anak Lampiran I.f Peraturan BKN 24 Tahun 2017 tentang Tata Cara Pemberian Cuti PNS; dan
+* Nota Persetujuan Kepala Badan Kepegawaian Negara yang dibuat rangkap 3 (tiga) sesuai dengan contoh Anak Lampiran I.g Peraturan BKN 24 Tahun 2017 tentang Tata Cara Pemberian Cuti PNS."
+Cuti PNS,pengaktifan kembali pns yang telah selesai menjalankan cuti diluar tanggungan negara cltn,"PNS yang telah selesai menjalankan cuti di luar tanggungan negara wajib melaporkan diri secara tertulis kepada instansi induknya.
+Batas waktu melaporkan diri sebagaimana dimaksud, paling lama 1 bulan setelah selesai menjalankan cuti di luar tanggungan negara."
+Cuti PNS,pesyaratan pengaktifan kembali pns yang telah selesai menjalankan cuti diluar tanggungan negara cltn,"Persyaratan administrasi :
+* Surat Pengantar dari Instansi pengusul;
+* Salinan SK Pemberian CLTN;
+* Salinan SK Perpanjangan CLTN (jika pernah mengajukan perpanjangan);
+* Salinan SK Kenaikan Pangkat terakhir;
+* Salinan SK Pemberhentian Sementara;
+* Salinan SK Pemberhentian Jabatan (Struktural/Fungsional)
+* Laporan secara tertulis PNS yang telah selesai menjalankan CLTN kepada instansi induknya/PPK yang dibuat sesuai dengan contoh Anak Lampiran l.i Peraturan BKN 24 Tahun 2017 tentang Tata Cara Pemberian Cuti PNS; dan
+* Nota Persetujuan Kepala Badan Kepegawaian Negara yang dibuat rangkap 3 (tiga) sesuai dengan contoh Anak Lampiran I.j Peraturan BKN 24 Tahun 2017 tentang Tata Cara Pemberian Cuti PNS."
+Cuti PNS,persyaratan pengaktifan kembali pns yang telah selesai menjalankan cuti diluar tanggungan negara cltn,"Persyaratan administrasi Pengaktifan Kembali setelah selesai menjalankan CLTN:
+* Surat Pengantar dari Instansi pengusul;
+* Salinan SK Pemberian CLTN;
+* Salinan SK Perpanjangan CLTN (jika pernah mengajukan perpanjangan);
+* Salinan SK Kenaikan Pangkat terakhir;
+* Salinan SK Pemberhentian Sementara;
+* Salinan SK Pemberhentian Jabatan (Struktural/Fungsional)
+* Laporan secara tertulis PNS yang telah selesai menjalankan CLTN kepada instansi induknya/PPK yang dibuat sesuai dengan contoh Anak Lampiran l.i Peraturan BKN 24 Tahun 2017 tentang Tata Cara Pemberian Cuti PNS; dan
+* Nota Persetujuan Kepala Badan Kepegawaian Negara yang dibuat rangkap 3 (tiga) sesuai dengan contoh Anak Lampiran I.j Peraturan BKN 24 Tahun 2017 tentang Tata Cara Pemberian Cuti PNS."
+Cuti PNS,ketentuan cuti sakit pns,"Ketentuan Cuti Sakit PNS :
+1. PNS yang sakit 1 (satu) hari menyampaikan surat
+keterangan sakit secara tertulis kepada atasan
+langsung dengan melampirkan surat keterangan
+dokter baik di dalam maupun di luar negeri yang
+memiliki izin praktek yang dikeluarkan oleh
+pejabat/instansi yang berwenang
+2. PNS yang sakit lebih dari 1 (satu) hari, harus
+mengajukan permintaan secara tertulis kepada PPK
+atau pejabat yang menerima delegasi wewenang untuk
+memberikan cuti sakit dengan melampirkan surat
+keterangan dokter baik di dalam maupun di luar negeri
+yang memiliki izin praktek yang dikeluarkan oleh
+pejabat/instansi yang berwenang
+3. Surat keterangan dokter sebagaimana dimaksud pada
+angka 1 dan 2 paling sedikit memuat pernyataan
+tentang perlunya diberikan cuti, lamanya cuti, dan
+keterangan lain yang diperlukan
+4. Surat keterangan dokter sebagaimana dimaksud pada
+angka 1 dan 2 paling sedikit memuat pernyataan
+tentang perlunya diberikan cuti, lamanya cuti, dan
+keterangan lain yang diperlukan"
+Cuti PNS,ketentuan cuti sakit pns lebih dari 1 satu tahun,"Jangka waktu cuti sakit lebih dari 1 (satu) tahun dapat ditambah untuk paling lama 6 (enam) bulan apabila diperlukan, berdasarkan surat keterangan tim penguji kesehatan yang ditetapkan oleh
+menteri yang menyelenggarakan urusan pemerintahan
+di bidang kesehatan"
+Cuti PNS,ketentuan cuti sakit pns yang tidak sembuh dalam jangka waktu 1 satu tahun di tambah 6 enam bulan,"PNS yang tidak sembuh dari penyakitnya dalam jangka
+waktu 1 (satu) tahun 6 (enam) bulan, harus
+diuji kembali kesehatannya oleh tim penguji kesehatan
+yang ditetapkan oleh menteri yang menyelenggarakan
+urusan pemerintahan di bidang kesehatan"
+Cuti PNS,ketentuan cuti sakit pns yang tidak sembuh dalam jangka waktu lebih dari 2 dua tahun atau 24 dua puluh empat bulan,"Apabila berdasarkan hasil pengujian kesehatan pns ybs belum
+sembuh dari penyakitnya setelah 2 (dua) tahun atau 24 (dua puluh empat) bulan , PNS yang bersangkutan
+diberhentikan dengan hormat dari jabatannya karena
+sakit dengan mendapat uang tunggu sesuai dengan
+ketentuan peraturan perundang-undangan"
+Cuti PNS,ketentuan cuti sakit pns yang mengalami keguguran,"PNS yang mengalami gugur kandungan berhak atas
+cuti sakit untuk paling lama 1 1/2 (satu setengah)
+bulan"

@@ -14,7 +14,7 @@ USER_QUESTIONS_FILE = "user_questions.csv"
 
 # Initialize files if they don't exist
 if not os.path.exists(DATA_FILE):
-    df = pd.DataFrame({"question": [], "answer": []})
+    df = pd.DataFrame({"tag": [], "question": [], "answer": []})
     df.to_csv(DATA_FILE, index=False)
 
 if not os.path.exists(USER_FILE):
@@ -43,7 +43,7 @@ def load_faq():
         return pd.read_csv(DATA_FILE)
     except Exception as e:
         st.error(f"Gagal memuat file FAQ: {e}")
-        return pd.DataFrame({"question": [], "answer": []})
+        return pd.DataFrame({"tag": [],"question": [], "answer": []})
 
 def save_faq(df):
     try:
@@ -213,13 +213,20 @@ def main():
     if st.session_state.logged_in and st.session_state.role == "admin":
         with st.sidebar.expander("Manajemen FAQ"):
             st.write("Tambahkan pertanyaan dan jawaban ke FAQ:")
+            new_tag = st.selectbox("Pilih Tag :",
+                                   ("Satyalancana Karya Satya SLKS",
+                                    "Cuti PNS",
+                                    "Cuti PPPK",
+                                    "Aplikasi Ekinerja BKN",
+                                    "Aplikasi Ekinerja Sumut"),
+                                    key="input_new_tag")
             new_question = st.text_area("Pertanyaan Baru", key="input_new_question")
             new_answer = st.text_area("Jawaban Baru", st.session_state.new_answer, key="input_new_answer")
             if st.button("Tambahkan ke FAQ",key="tambah_faq_button"):
                 if new_question.strip() and new_answer.strip():
                     faq_df = load_faq()
                     if new_question not in faq_df["question"].values:
-                        new_entry = pd.DataFrame({"question": [new_question], "answer": [new_answer]})
+                        new_entry = pd.DataFrame({"tag": [new_tag], "question": [new_question], "answer": [new_answer]})
                         faq_df = pd.concat([faq_df, new_entry], ignore_index=True)
                         save_faq(faq_df)
                         st.success("Pertanyaan dan jawaban berhasil ditambahkan ke FAQ!")
